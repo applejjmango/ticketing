@@ -17,9 +17,13 @@ export * from "./events/base-listener";
 export * from "./events/base-publisher";
 export * from "./events/subjects";
 
-// Interface
+// Ticket Interface
 export * from "./events/interfaces/ticket/ticket-created-event";
-export * from "./events/interfaces/ticket-updated-event";
+export * from "./events/interfaces/ticket/ticket-updated-event";
+
+// Order Interface
+export * from "./events/interfaces/order/order-created-event";
+export * from "./events/interfaces/order/order-cancelled-event";
 
 // Enum
 export * from "./events/enum/order-status";
