@@ -1,7 +1,7 @@
-import { Subjects } from "../subjects";
+import { Subjects } from "../../subjects";
 
 export interface TicketCreatedEvent {
-  subject: Subjects.TicketCreated;
+  subject: Subjects.TICKET_CREATED;
   data: {
     id: string;
     title: string;

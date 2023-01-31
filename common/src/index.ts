@@ -18,7 +18,7 @@ export * from "./events/base-publisher";
 export * from "./events/subjects";
 
 // Interface
-export * from "./events/interfaces/ticket-created-event";
+export * from "./events/interfaces/ticket/ticket-created-event";
 export * from "./events/interfaces/ticket-updated-event";
 
 // Enum
