@@ -12,6 +12,32 @@ build:
       context: auth
       docker:
         dockerfile: Dockerfile
+        buildArgs: # That is assuming that you have an env variable set on your machine of 'NPM_TOKEN'
+          NPM_TOKEN: "{‌{ .NPM_TOKEN }}" # For Private NPM Repository / https://phoenixnap.com/kb/set-environment-variable-mac /
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: playbuilder/tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: playbuilder/orders
+      context: orders
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
+    - image: playbuilder/expiration
+      context: expiration
+      docker:
+        dockerfile: Dockerfile
       sync:
         manual:
           - src: "src/**/*.ts"
