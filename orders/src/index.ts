@@ -8,6 +8,7 @@ import { TicketCreatedListener } from "@/events/listeners/ticket-created-listene
 import { TicketUpdatedListener } from "@/events/listeners/ticket-updated-listener";
 
 const start = async () => {
+  console.log("Starting.............");
   if (!process.env.JWT_KEY) {
     throw new Error("JWT_KEY must be defined");
   }
@@ -40,7 +41,7 @@ const start = async () => {
 
     new TicketCreatedListener(natsWrapper.client).listen();
     new TicketUpdatedListener(natsWrapper.client).listen();
-    new ExpirationCompletedListener(natsWrapper.client).listen();
+    // new ExpirationCompletedListener(natsWrapper.client).listen();
 
     mongoose.set("strictQuery", true);
     await mongoose.connect(process.env.MONGO_URI, {});
