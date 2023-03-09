@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1674664894660" clover="3.2.0">
+  <project timestamp="1674664894661" name="All files">
+    <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0" elements="18" coveredelements="0" complexity="0" loc="12" ncloc="12" packages="1" files="1" classes="1"/>
+    <file name="index.ts" path="/Users/jeonchangsuk/Desktop/learning/microservices/my-microservices/ticketing/tickets/src/index.ts">
+      <metrics statements="12" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="10" count="0" type="stmt"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>
